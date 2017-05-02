@@ -57,13 +57,20 @@ public class Square {
     public void printArray() {
 
         System.out.println("New array: ");
-
+/*
         for (int i[] : squareArray) {
             for (int j : i) {
-                System.out.println(j + "\t");
+                System.out.println(j+ "\t");
             }
             System.out.println("\n");
 
+        }
+*/
+        for (int i = 0; i < sizeArray1; i++){
+            for (int j = 0; j < sizeArray2; j++){
+                System.out.print(squareArray[i][j]+" ");
+            }
+            System.out.println("\n");
         }
 
     }
