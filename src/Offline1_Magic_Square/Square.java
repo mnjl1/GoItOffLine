@@ -14,7 +14,7 @@ public class Square {
 
     Scanner scanner = new Scanner(System.in);
 
-    public Square() {
+    public Square(int sizeArray1, int sizeArray2) {
 
         this.sizeArray1 = sizeArray1;
         this.sizeArray2 = sizeArray2;
@@ -28,6 +28,7 @@ public class Square {
     public void setSquareArray(int[][] squareArray) {
         this.squareArray = squareArray;
     }
+
 
     public void addSize() {
         System.out.println("Enter array size1.");
@@ -50,13 +51,19 @@ public class Square {
 
         }
 
+
+    }
+
+    public void printArray() {
+
         System.out.println("New array: ");
 
-        for(int i[]: squareArray) {
-            for (int j: i) {
-                System.out.println(j +"\t");
+        for (int i[] : squareArray) {
+            for (int j : i) {
+                System.out.println(j + "\t");
             }
             System.out.println("\n");
+
         }
 
     }

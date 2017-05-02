@@ -9,16 +9,22 @@ import java.util.Scanner;
 public class MagicSquareTest {
 
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter array size1.");
+        int sizeArray1 = scanner.nextInt();
+
+        System.out.println("Enter array size 2");
+        int sizeArray2 = scanner.nextInt();
 
 
-        System.out.println("Enter size1");
+        Square newSquare = new Square(sizeArray1, sizeArray2);
 
 
-        Square newSquare = new Square();
-
-        newSquare.addSize();
 
         newSquare.fillArray();
+
+        newSquare.printArray();
 
 
 
